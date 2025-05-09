@@ -1,1 +1,155 @@
-/*# sourceMappingURL=main.css.map */
+@charset "UTF-8";
+* {
+  background-color: #141414;
+  color: white;
+}
+
+.start_screen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.title_start {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+}
+
+.subtitle_start {
+  color: #677A86;
+  margin-bottom: 1.5rem;
+  width: 60ch;
+  font-family: "Montserrat";
+  padding-right: 3em;
+}
+
+.project_desc {
+  color: #677A86;
+  margin-top: 1rem;
+  width: 60ch;
+  font-family: "Montserrat";
+  line-height: 1.5em;
+  padding-right: 3em;
+}
+
+#subrayado {
+  font-weight: bold; /* Pone el texto en negrita */
+  display: inline-block; /* Asegura que el borde se comporte de manera adecuada */
+  padding-bottom: 5px; /* Ajusta la distancia entre el texto y la línea de subrayado */
+  border-bottom: 2px solid #ffffff; /* Crea la línea de subrayado */
+  margin-bottom: 0.5em;
+}
+
+#scroll {
+  height: 7.5em;
+  line-height: 1.5em;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  margin-bottom: 2em;
+}
+
+/* Personaliza la apariencia de la scrollbar */
+#scroll::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento */
+}
+
+/* Personaliza la parte de la barra de desplazamiento que el usuario "agarra" */
+#scroll::-webkit-scrollbar-thumb {
+  background-color: #96B5C8; /* Color de la parte del thumb (lo que se arrastra) */
+  border-radius: 8px; /* Bordes redondeados */
+  border: 2px solid #677A86; /* Opcional: agrega borde alrededor del thumb */
+}
+
+/* Personaliza la pista de la scrollbar (el fondo por donde se mueve el thumb) */
+#scroll::-webkit-scrollbar-track {
+  background-color: #333; /* Fondo oscuro para el track */
+  border-radius: 8px; /* Bordes redondeados para el track */
+  margin: 2px; /* Espacio alrededor del track */
+}
+
+/* Opcional: cuando el usuario pasa el cursor sobre la scrollbar */
+#scroll::-webkit-scrollbar-thumb:hover {
+  background-color: #84a9b7; /* Un color más oscuro para cuando el thumb está siendo hover */
+}
+
+.button_start {
+  padding: 1rem 5rem;
+  font-size: 1rem;
+  color: #435058;
+  background-color: #96B5C8;
+  border-radius: 1rem;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  width: auto;
+  margin: 0 auto;
+  display: inline-block;
+  font-family: "Montserrat";
+}
+
+.button_start:hover {
+  background-color: #D3E2EC;
+  transform: scale(1.025);
+}
+
+.button_start:active {
+  transform: scale(0.95);
+  background-color: rgba(211, 226, 236, 0.6784313725);
+}
+
+.app {
+  visibility: hidden; /* Asegúrate de que esté oculto inicialmente */
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Asegúrate de que ocupe toda la altura de la ventana */
+  background-color: #222; /* Fondo oscuro */
+}
+
+canvas {
+  width: 100%; /* El lienzo se ajusta al 100% del ancho */
+  height: 100vh; /* El lienzo ocupará toda la altura de la ventana */
+  display: block; /* Elimina espacio extra alrededor del lienzo */
+}
+
+.final_time {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: rgba(255, 255, 255, 0.745);
+  font-size: 1rem;
+  text-align: center;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  background-color: #D3E2EC;
+}
+
+.time_display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #141414;
+  margin-bottom: 1rem;
+  background-color: #D3E2EC;
+}
+
+.description_final {
+  font-family: "Montserrat";
+  width: 50ch;
+  align-items: center;
+  background-color: #D3E2EC;
+  margin-bottom: 1rem;
+  color: rgba(20, 20, 20, 0.6745098039);
+}
+
+html,
+body {
+  font-family: "Pinyon Script";
+}/*# sourceMappingURL=main.css.map */
