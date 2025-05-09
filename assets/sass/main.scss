@@ -1,6 +1,26 @@
-@import "lib/reset";
+@import 'partials/intro';
+@import 'partials/reloj';
+@import 'partials/final';
 
 
-*{
-    border: solid 1px salmon;
+
+
+* {
+    // border: 1px solid pink;
 }
+
+
+
+html,
+body {
+    // font-family: "Kingston Roman";
+    // font-family: "Aboreto";
+    font-family: "Pinyon Script";
+
+
+    // font-size: var(--font-base);
+    // line-height: var(--font-leading-base);
+    // color: var(--base-color);
+    // min-height: 100vh;
+}
+

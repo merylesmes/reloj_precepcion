@@ -1,0 +1,19 @@
+.app {
+    visibility: hidden;  /* Asegúrate de que esté oculto inicialmente */
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;  /* Asegúrate de que ocupe toda la altura de la ventana */
+    background-color: #222;  /* Fondo oscuro */
+}
+
+canvas { 
+    width: 100%;  /* El lienzo se ajusta al 100% del ancho */
+    height: 100vh;  /* El lienzo ocupará toda la altura de la ventana */
+    display: block;  /* Elimina espacio extra alrededor del lienzo */
+}

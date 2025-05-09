@@ -1,17 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/sass/main.scss">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"> 
-    <title>Document</title>
+    <title>Proyecto Interactivo</title>
+    <link rel="stylesheet" href="/assets/sass/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Aboreto&family=Chivo+Mono:ital,wght@0,100..900;1,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Pinyon+Script&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div class="app">
-        
+    <div class="start_screen">
+        <h1 class="title_start">La Percepción Del Tiempo</h1>
+        <div id="scroll">
+            <p class="subtitle_start">
+                A continuación, encontrareis un reloj simbólico que representa una
+                percepción subjetiva del tiempo basada en interacciones. Utiliza las teclas <b>"m"</b>, <b>"s"</b> y <b>"h"</b> para mover
+                minutos, segundos y horas. Para explorar cómo su interacción distorsiona este flujo temporal único.
+            </p>
+            <p class="project_desc">
+                <b id="subrayado">Sobre el Proyecto</b><br>
+                Este proyecto examina cómo nuestra percepción del tiempo cambia al intervenir en su flujo natural.
+                Manipulando los elementos del reloj, puedes experimentar cómo las acciones conscientes distorsionan
+                la forma en que percibimos la duración de un momento o la velocidad con la que transcurre el tiempo.
+            </p>
+        </div>
+        <button class="button_start">Comenzar</button>
     </div>
+    
+    
+
+    <!-- Contenedor del reloj -->
+    <div class="app" style="display: none;">
+        <!-- Aquí se insertará el reloj generado por p5.js -->
+    </div>
+
+    <div class="final_time" style="display:none;">
+        <p class="time_display"></p>
+        <p class="description_final">
+            El tiempo es una percepción personal y mutable. Al interactuar con este reloj, has alterado su flujo, 
+            creando una visión única del paso del tiempo. Cada tecla presionada ha dejado su marca, 
+            transformando lo que antes parecía una medida fija en una experiencia personal e inmutable. 
+            Lo que ves ahora refleja cómo el tiempo puede ser moldeado por nuestras decisiones, 
+            nuestras acciones y nuestra conexión con él.
+        </p>
+    </div>
+
+    <!-- Script de p5.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/p5.js"></script>
+    <script src="/app/sketch.js"></script>
+
+    <!-- Tu archivo JavaScript -->
     <script src="/app/main.js"></script>
 </body>
 </html>
